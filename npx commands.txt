@@ -1,0 +1,137 @@
+
+ng run vm-global:storybook
+
+//Create STrapi project
+===========================
+npx create-strapi-app . --quickstart
+
+
+  npm run develop
+  Start Strapi in watch mode.
+
+  npm run start
+  Start Strapi without watch mode.
+
+  npm run build
+  Build Strapi admin panel.
+
+  npm run strapi
+  Display all available commands.
+
+You can start by doing:
+
+  cd D:\Workspace\strapi-project
+  npm run develop
+
+
+Cucumber command
+================
+npx cypress-tags run -e TAGS='@helpvm'
+
+
+
+Angular JS Commands
+====================
+
+npm install -g @angular/cli
+ng serve --open
+
+
+
+
+
+Cypress
+========
+
+1. Run all specific files in the project:
+
+In the command line: 
+	npx cypress run
+
+Add the in package.json under scripts section add "test": "cypress run"  (for scripts we should use npm and not npx)
+then 	
+	npm test
+	npm run test
+
+2. Run all spec files in a folder
+	npx cypress run --spec "cypress/integration/examples/**/*"
+
+	npm run test --spec "cypress/integration/examples/**/*"
+
+
+3. Run one spec file
+
+npx cypress run --spec "cypress/integration/examples/actions.spec.js"
+
+npm run test --spec "cypress/integration/examples/actions.spec.js"
+
+
+Mochawesome REport plugins:https://docs.cypress.io/guides/tooling/reporters#Examples
+=========================== 
+https://testersdock.com/html-reports-cypress/
+
+npm install mocha --save-dev
+
+npm install cypress-multi-reporters
+
+npm install mochawesome --save-dev
+
+npm install mochawesome-merge --save-dev
+
+npm install mochawesome-report-generator --save-dev
+
+
+Once installed check the dependencies were added in package.json
+=================================================================
+
+Go to Cypress.json and add the below commands:
+
+npx cypress watch
+
+
+
+cy.checkA11y(
+  {
+    exclude: ['.article-action'],
+  },
+  {
+    rules: {
+      'empty-heading': { enabled: false },
+    },
+  },
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
